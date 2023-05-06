@@ -1,38 +1,225 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-image: url("../public/wall.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.con-img {
+  width: 300px;
+}
+
+.con-img img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.con-text {
+  position: absolute;
+  top: 1rem;
+  left: 3rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+.title {
+  display: flex;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  background-color: rgb(255, 255, 255, 0.1);
+  color: #fff;
+  margin: 0 1rem;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+}
+
+.con-contact {
+  position: absolute;
+  left: 3rem;
+  top: 6.5rem;
+}
+
+.con-contact p {
+  margin: .3rem 0;
+}
+
+.con-skills {
+  position: absolute;
+  left: 3.4rem;
   display: flex;
   flex-direction: column;
+  top: 11.5rem;
+  width: 100%;
+}
+
+.con-contact {
+  font-size: 1rem;
+}
+
+.con-contact p{
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 1.2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.email {
+  height: 1.3rem;
+  margin: 0 0.5rem 0 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.address {
+  height: 1.3rem;
+  margin: 0 0.6rem 0 0.2rem;
+  color: rgb(244, 88, 88);
+}
+
+.card-skills {
+  display: flex;
+}
+
+.skill {
+  padding: 0 1rem;
+  font-size: 2.5rem;
+}
+
+.con-tools {
+  position: absolute;
+  left: 3.4rem;
+  top: 17.5rem;
+}
+
+.card-tools {
+  display: flex;
+  width: 100%;
+}
+
+.tool {
+  padding: 0.3rem 0.8rem;
+  font-size: 2.5rem;
+}
+
+span {
+  background: linear-gradient(red, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tool img{
+  width: 36px;
+  margin: .6rem 0;
+}
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
   }
-  to {
-    transform: rotate(360deg);
+
+  .con-img {
+    margin-top: 1rem;
   }
+
+  .title {
+    width: 400px;
+    background-color: rgb(255, 255, 255, 0.1);
+    position: relative;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+    margin: 1rem 0;
+  }
+
+  .con-skills {
+    left: 2rem;
+  }
+
+  .con-tools {
+    left: 2rem;
+  }
+}
+
+@media screen and (max-width: 376px) {
+body {
+  max-width: 375px;
+}
+
+  .container {
+    outline: 1px solid red;
+    height: auto;
+  }
+  
+  .title {
+    width: 320px;
+    height: 350px;
+  }
+  
+  .con-img {
+    width: 250px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+  
+  .con-text {
+    position: absolute;
+    top: 1rem;
+    left: 1.1rem;
+  }
+  
+  .con-contact {
+    left: 1rem;
+    top: 6rem;
+  }
+  
+  .con-contact p{
+    font-size: 1rem;
+  }
+  
+  .skill {
+    font-size: 2rem;
+    padding: 0 0.5rem;
+  }
+  
+  .tool {
+    font-size: 2rem;
+    padding: 0 0.5rem;
+  }
+  
+  .tool img{
+    width: 30px;
+    margin: .5rem 0;
+  }
+  
+  .con-skills {
+    left: 1rem;
+    top: 10.5rem;
+  }
+  
+  .con-tools {
+    left: 1rem;
+    top: 15.5rem;
+  }
+  
 }

@@ -102,6 +102,11 @@ h3 {
 .skill {
   padding: 0 1rem;
   font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.skill:hover , .tool:hover {
+  transform: scale(1.5);
 }
 
 .con-tools {
@@ -118,6 +123,7 @@ h3 {
 .tool {
   padding: 0.3rem 0.8rem;
   font-size: 2.5rem;
+  cursor: pointer;
 }
 
 span {
@@ -132,7 +138,11 @@ span {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
+  body {
+    max-width: 768px;
+  }
+
   .container {
     flex-direction: column;
     height: auto;
@@ -165,7 +175,6 @@ body {
 }
 
   .container {
-    outline: 1px solid red;
     height: auto;
   }
   

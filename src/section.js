@@ -10,8 +10,8 @@ function All() {
     return (
         <div className="title">
                 <div className="con-text">
-                    <h1>Hi, I'm <span>Theerakorn</span></h1>
-                    <h2>I'm a Font-End Developer.</h2>
+                    <h1>I'm <span>Theerakorn</span></h1>
+                    <h2>Front-End Developer.</h2>
                 </div>
                 <div className="con-contact">
                     <p><FontAwesomeIcon icon={faLocationDot} className="address" /> Songkhla, Thailand</p>
@@ -44,7 +44,7 @@ function All() {
                             <FontAwesomeIcon icon={['fab', 'git-alt']} style={{ color: '#f05133' }} />
                         </div>
                         <div className="tool">
-                            <FontAwesomeIcon icon={['fab', 'github']} style={{ color: '#171516' }} />
+                            <FontAwesomeIcon icon={['fab', 'github']} style={{ color: '#fff' }} />
                         </div>
                         <div className="tool">
                             <img src={process.env.PUBLIC_URL + 'vscode.png'}></img>

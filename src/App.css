@@ -21,12 +21,14 @@ body {
 }
 
 .con-img {
-  width: 300px;
+  width: 200px;
+  border-radius: 20px;
 }
 
 .con-img img {
+  height: 400px;
   width: 100%;
-  border-radius: 50%;
+  border-radius: 20px;
 }
 
 .con-text {
@@ -70,8 +72,7 @@ h3 {
   left: 3.4rem;
   display: flex;
   flex-direction: column;
-  top: 11.5rem;
-  width: 100%;
+  top: 12rem;
 }
 
 .con-contact {
@@ -85,12 +86,15 @@ h3 {
 }
 
 .email {
-  height: 1.3rem;
-  margin: 0 0.5rem 0 0;
+
+  height: 1.6rem;
+  margin: 0 0.6rem 0 0;
+  width: 30px;
 }
 
 .address {
-  height: 1.3rem;
+  left: 0;
+  height: 1.6rem;
   margin: 0 0.6rem 0 0.2rem;
   color: rgb(244, 88, 88);
 }
@@ -127,9 +131,24 @@ h3 {
 }
 
 span {
-  background: linear-gradient(red, orange);
+  /* background: linear-gradient(red, orange);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
+  animation: amimate 4s linear infinite;
+}
+
+@keyframes amimate {
+  0% {
+    color: rgb(24, 29, 58);
+  }
+  100% {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px #03bcf4,
+    0 0 20px #03bcf4,
+    0 0 40px #03bcf4,
+    0 0 80px #03bcf4;
+    
+  }
 }
 
 .tool img{
@@ -139,10 +158,6 @@ span {
 
 
 @media screen and (max-width: 769px) {
-  body {
-    max-width: 768px;
-  }
-
   .container {
     flex-direction: column;
     height: auto;
@@ -150,6 +165,10 @@ span {
 
   .con-img {
     margin-top: 1rem;
+  }
+
+  .con-img img {
+    height: 300px;
   }
 
   .title {
@@ -169,13 +188,19 @@ span {
   }
 }
 
-@media screen and (max-width: 376px) {
-body {
-  max-width: 375px;
-}
+@media screen and (max-width: 429) {
+  html {
+    width: 400px;
+  }
+
+  body {
+    width: 400px;
+  }
 
   .container {
     height: auto;
+    width: 400px;
+    outline: auto;
   }
   
   .title {

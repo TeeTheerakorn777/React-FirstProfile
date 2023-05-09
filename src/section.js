@@ -2,9 +2,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 
-import { faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons'
+import { fas } from '@fortawesome/free-solid-svg-icons'
 
-library.add(fab); // เพิ่ม package ของ free-brands-svg-icons เข้าไปใน library ของ FontAwesome
+library.add(fab, fas); // เพิ่ม package ของ free-brands-svg-icons เข้าไปใน library ของ FontAwesome
 
 function All() {
     return (
@@ -14,8 +14,8 @@ function All() {
                     <h2>Front-End Developer.</h2>
                 </div>
                 <div className="con-contact">
-                    <p><FontAwesomeIcon icon={faLocationDot} className="address" /> Songkhla, Thailand</p>
-                    <p><FontAwesomeIcon icon={faEnvelope} className="email"  /> theerakorn.dev@gmail.com</p>
+                    <p><img src={process.env.PUBLIC_URL + '/dotmap.png'} className="address" /> Songkhla, Thailand</p>
+                    <p><img src={process.env.PUBLIC_URL + '/email.png'}  className="email"/> theerakorn.dev@gmail.com</p>
                 </div>
                 <div className="con-skills">
                     <h4>PROGRAMMIMG / FRAMWORK</h4>

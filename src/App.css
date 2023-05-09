@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 body {
@@ -10,6 +11,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  overflow: hidden;
 }
 
 .container {
@@ -158,9 +160,14 @@ span {
 
 
 @media screen and (max-width: 769px) {
+  body {
+    max-width: 767px;
+  }
+
   .container {
     flex-direction: column;
-    height: auto;
+    height:0 auto;
+    max-width: 767px;
   }
 
   .con-img {
@@ -190,11 +197,11 @@ span {
 
 @media screen and (max-width: 429) {
   html {
-    width: 400px;
+    max-width: 427px;
   }
 
   body {
-    width: 400px;
+    max-width: 427px;
   }
 
   .container {

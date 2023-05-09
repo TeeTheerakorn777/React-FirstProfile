@@ -6,11 +6,11 @@
 }
 
 body {
-  background-image: url("../public/wall.jpg");
+  background-image: url("../public/galaxy.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
 }
 
@@ -43,10 +43,13 @@ h3 {
   font-size: 1.4rem;
 }
 
+.con-skills h4 {
+  width: 250px;
+}
+
 .title {
   display: flex;
   height: 400px;
-  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -77,10 +80,6 @@ h3 {
   top: 12rem;
 }
 
-.con-contact {
-  font-size: 1rem;
-}
-
 .con-contact p{
   display: flex;
   align-items: center;
@@ -88,7 +87,6 @@ h3 {
 }
 
 .email {
-
   height: 1.6rem;
   margin: 0 0.6rem 0 0;
   width: 30px;
@@ -97,7 +95,7 @@ h3 {
 .address {
   left: 0;
   height: 1.6rem;
-  margin: 0 0.6rem 0 0.2rem;
+  margin: 0 0.7rem 0 .1rem;
   color: rgb(244, 88, 88);
 }
 
@@ -106,7 +104,7 @@ h3 {
 }
 
 .skill {
-  padding: 0 1rem;
+  padding: 0 0.7rem;
   font-size: 2.5rem;
   cursor: pointer;
 }
@@ -127,7 +125,7 @@ h3 {
 }
 
 .tool {
-  padding: 0.3rem 0.8rem;
+  padding: 0.3rem 0.7rem;
   font-size: 2.5rem;
   cursor: pointer;
 }
@@ -180,9 +178,6 @@ span {
 
   .title {
     width: 400px;
-    background-color: rgb(255, 255, 255, 0.1);
-    position: relative;
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
     margin: 1rem 0;
   }
 
@@ -196,23 +191,14 @@ span {
 }
 
 @media screen and (max-width: 429) {
-  html {
-    max-width: 427px;
-  }
-
   body {
     max-width: 427px;
   }
 
   .container {
     height: auto;
-    width: 400px;
     outline: auto;
-  }
-  
-  .title {
-    width: 320px;
-    height: 350px;
+    max-width: 425px;
   }
   
   .con-img {
@@ -257,7 +243,7 @@ span {
     left: 1rem;
     top: 10.5rem;
   }
-  
+
   .con-tools {
     left: 1rem;
     top: 15.5rem;
